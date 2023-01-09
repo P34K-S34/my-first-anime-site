@@ -1,0 +1,153 @@
+@font-face {
+    font-family: strange;
+    src: url("../../fonts/something-strange-font/SomethingStrange-vjYD.ttf") format("truetype"),
+    url("../../fonts/something-strange-font/SomethingStrange-vjYD.eot") format("eot"),
+    url("../../fonts/something-strange-font/SomethingStrange.svg") format("svg#strange"),
+    url("../../fonts/something-strange-font/SomethingStrange.woff") format("woff");
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Header Type */
+.header{
+    background-color: rgb(211, 56, 56);    
+
+    width: 100%;
+    padding: 10px;
+
+    font-family: strange;
+}
+.header h2{
+    color: rgb(0, 0, 0);
+    font-size: 40px;
+
+    margin-left: 10px;
+}
+.header p{
+    color: rgba(233, 227, 227, 0.945);
+    margin-left: 50px;
+
+    font-size: 30px;
+    font-weight: 50;
+    font-variant: small-caps;
+}
+
+
+
+
+/* Nav Type */
+#main_nav{
+    background-color: #000;    
+    border-bottom: 5px solid rgb(124, 5, 5);
+}
+.nav{
+    width: 960px;
+    height: 48px;
+    margin: 0 auto;
+    background-color: #000;
+
+    border-left: 2px solid #fff;
+    border-right: 2px solid #fff;
+}
+.nav ul{
+    background-color: #000;
+    list-style-type: none;
+
+    z-index: 1001;
+}
+.nav ul li{
+    position: relative;
+
+    float: left;
+    border-right: 3px solid rgb(124, 5, 5);
+}
+.nav ul li a{
+    text-decoration: none;
+    color: #ddd;
+
+    padding: 15px 30px;
+    display: block;
+}
+.nav ul li a:hover{
+    color: aquamarine;
+}
+
+/* DropDown Menu */
+.nav ul li ul{
+    background-color: #000;
+    text-align: center;
+
+    position: absolute;
+    left: -9999px;
+}
+.nav ul li:hover ul{
+    left: 0;
+}
+.nav ul li ul li{
+    width: 160px;
+
+    float: none;
+    border-right: none;
+
+    margin-top: 2px;
+    border-top: 3px solid rgb(124, 5, 5);
+}
+
+/* Sub DropDown Menu */
+.nav ul li ul li{
+    position: relative;
+}
+.nav ul li ul li ul{
+    position: absolute;
+    top: -9999px;
+}
+.nav ul li ul li:hover ul{
+    top: -5px;    
+    left: 160px;
+}
+.nav ul li ul li ul li{
+    width: 200px;
+}
+
+
+
+
+
+/* Section Type */
+#bg{
+    background-color: #000;
+}
+.nivoSlider{
+    margin: 0 auto;    
+    width: 960px;
+    height: 800px;
+}
+img{
+    height: 800px;
+}
+
+
+
+/* Main footer */
+#main_footer{
+    background-color: rgb(61, 58, 58);
+}
+.footer{
+    width: 960px;
+    margin: 0 auto;
+
+    background-color: rgb(61, 58, 58);
+}
+.footer h3{
+    text-align: center;
+    color: #ddd;    
+    padding: 10px;
+
+    font-weight: 150;
+}
+
